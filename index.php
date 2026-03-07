@@ -1,7 +1,6 @@
 ﻿<?php
 require_once 'config/database.php';
 
-// Redirect logged in users
 if (isLoggedIn()) {
     if (isTeacher()) {
         redirect('dashboard_teacher.php');
